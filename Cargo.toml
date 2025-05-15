@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-ra-fsp-sys = { path = "/home/ddystopia/job/ra-fsp-sys" }
+ra-fsp-sys = { git = "https://github.com/Ddystopia/ra-fsp-sys" }
 cortex-m = { version = "0.7.7", default-features = false }
 log = { version = "0.4.27", default-features = false, optional = true }
 
