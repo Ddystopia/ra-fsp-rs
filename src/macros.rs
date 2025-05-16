@@ -36,7 +36,7 @@ macro_rules! event_link_select {
 
             let mut i = 0;
             while i < select.len() {
-                let int = unsafe { ::core::mem::transmute::<u16, $crate::pac::Interrupt>(i as u16) };
+                let int = $crate::pac::Interrupt::try_from_u16(i as u16).unwrap();
                 match int {
                     $($idx => select[i] = $val,)*
                     _ => (),

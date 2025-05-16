@@ -30,10 +30,9 @@ Read:
 
 */
 
-// use cortex_m::interrupt;
-use ra_fsp_sys::pac::Interrupt;
 pub use ra_fsp_sys::r_ether::{InterruptCause, interrupt_cause};
 
+use crate::pac::Interrupt;
 use crate::unsafe_pinned::UnsafePinned;
 
 use ra_fsp_sys::generated::{

@@ -346,6 +346,7 @@ dependencies = [
 [[package]]
 name = "ra-fsp-sys"
 version = "0.1.1"
+source = "git+https://github.com/Ddystopia/ra-fsp-sys#06639e5d2ad08e9cf1dcd8586c55ff8a07757aa7"
 dependencies = [
  "bindgen",
  "build_cfg",
@@ -359,6 +360,7 @@ dependencies = [
 [[package]]
 name = "ra6m3"
 version = "0.2.0"
+source = "git+https://github.com/Ddystopia/ra-fsp-sys#06639e5d2ad08e9cf1dcd8586c55ff8a07757aa7"
 dependencies = [
  "cortex-m",
  "critical-section",
