@@ -32,11 +32,7 @@ macro_rules! event_link_select {
         #[allow(non_upper_case_globals)]
         #[unsafe(no_mangle)]
         $vis static $name: [$ty; $crate::ra_fsp_sys::generated::BSP_ICU_VECTOR_MAX_ENTRIES as usize] = {
-            let mut select = [$crate::ra_fsp_sys::generated::ELC_EVENT_NONE; $crate::ra_fsp_sys::generated::BSP_ICU_VECTOR_MAX_ENTRIES as usize];
-
-            // #![feature(variant_count)]
-            // assert!($crate::ra_fsp_sys::generated::BSP_ICU_VECTOR_MAX_ENTRIES as usize ==
-            //     ::core::mem::variant_count::<$crate::pac::Interrupt>() as usize);
+            let mut select = [$crate::e_elc_event::ELC_EVENT_NONE; $crate::ra_fsp_sys::generated::BSP_ICU_VECTOR_MAX_ENTRIES as usize];
 
             let mut i = 0;
             while i < select.len() {

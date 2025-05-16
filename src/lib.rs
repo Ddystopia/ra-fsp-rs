@@ -3,7 +3,7 @@
 pub use ra_fsp_sys;
 pub use ra_fsp_sys::pac;
 
-pub use ra_fsp_sys::generated::ELC_EVENT_EDMAC0_EINT;
+pub use ra_fsp_sys::generated::e_elc_event;
 
 #[cfg(feature = "mod-r_ether")]
 pub mod ether;
